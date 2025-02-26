@@ -12,7 +12,7 @@ export class CriaUsuarioDto {
   @IsString()
   cidade: string;
 
-  @IsEmail({}, { message: "Email é inválido" })
+  @IsEmail(undefined, { message: "Email é inválido" })
   email: string;
 
   @IsString()
